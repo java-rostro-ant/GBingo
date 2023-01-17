@@ -1,0 +1,131 @@
+/* HEADER CSS */
+
+
+.split-pane:horizontal, .split-pane:vertical {
+    -fx-background-color: transparent;
+}
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+.split-pane:horizontal {
+    -fx-background-color: transparent;
+}
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+.parent-body {
+-fx-background-image: url("../images/UI%20Background_Guanzon%20Fest%20(1920x1080).png");
+-fx-background-repeat: no-repeat;
+-fx-background-size: cover, auto;
+}
+
+.parent-body-lg {
+-fx-background-image: url("../images/bg(1920x1080).jpg");
+-fx-background-repeat: no-repeat;
+-fx-background-size: cover, auto;
+}
+
+.main-bg {
+    /*-fx-background-color: linear-gradient(to top,  #f3791c, #fa4079);*/
+    -fx-background-color: #000000;
+}
+
+.pattern-bg {
+    /*-fx-background-insets: -20, -10;*/
+    -fx-background-image: url("../images/MAC_BACK.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-background-position: center center;
+}
+
+.number-box {
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 20px;
+    -fx-border-width: 10px;
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);*/
+}
+    
+.bingo-box {
+    -fx-background-image: url("../images/bingo_bg.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-background-position: center center;
+}
+/*******************************************************************************
+ *                                                                             *
+ * BUTTON BODY CSS                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+.button_process {
+  -fx-background-color:  #FF901A;
+  -fx-text-fill: white;
+  -fx-cursor: hand;
+}
+.button_process:hover
+{
+  -fx-background-color: #ffa94d;
+  -fx-text-fill: black;
+}
+
+.button_process:hover > .glyph-icon
+{
+  -fx-fill: black;
+}
+
+.button_process > .glyph-icon {
+   -fx-fill: white;
+}
+
+
+.head-ic-min {
+    -fx-background-color: transparent;
+}
+
+.head-ic-close {
+    -fx-background-color: transparent;
+}
+
+.head-ic-min:hover {
+    -fx-background-color: #5E5E5E;
+}
+
+.head-ic-close:hover {
+    -fx-background-color: #D6001C;
+}
+
+.head-ic-min:active {
+    -fx-background-color: transparent;
+}
+
+.lbl-default{
+    -fx-padding: 10, 0, 10, 0;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Arial';
+}
+.lbl-default-md{
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Arial';
+}
+.lbl-default-lg{
+    -fx-font-size: 70px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Arial';
+}
+
+.number-body-lg{
+    -fx-padding:80, 30, 30, 30;
+}
+.number-body-md{
+    -fx-padding:40, 20, 20, 20;
+}
+.number-body{
+    -fx-padding:40, 20, 20, 20;
+}
+/*.label{
+    -fx-font-size: 80px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Century Schoolbook';
+}*/
