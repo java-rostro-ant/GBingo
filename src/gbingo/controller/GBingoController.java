@@ -88,7 +88,7 @@ public class GBingoController implements Initializable, ScreenInterface {
     @FXML
     private StackPane stackMin, stackClose, stackBody;
     @FXML
-    private ImageView imgMin, imgClose,imgHeader;
+    private ImageView imgMin,imgBrands, imgClose,imgHeader;
     @FXML
     private VBox vbCurrent;
     
@@ -142,6 +142,7 @@ public class GBingoController implements Initializable, ScreenInterface {
         
         
         initFields();
+        initBingoBrand();
         btnSearch.setOnAction(this::cmdButton_Click);
         btnNew.setOnAction(this::cmdButton_Click);
         btnRefresh.setOnAction(this::cmdButton_Click);
@@ -508,6 +509,7 @@ public class GBingoController implements Initializable, ScreenInterface {
             imgClose.setFitHeight(16.0);
             imgMin.setFitWidth(16.0);
             imgClose.setFitWidth(16.0);
+            imgBrands.setFitWidth(260);
             HBox.setMargin(btnMin, new Insets(-20, 0, 0, 0));
             HBox.setMargin(btnClose, new Insets(-20, 0, 0, 0));
                    
@@ -529,6 +531,7 @@ public class GBingoController implements Initializable, ScreenInterface {
             imgClose.setFitHeight(14.0);
             imgMin.setFitWidth(14.0);
             imgClose.setFitWidth(14.0);
+            imgBrands.setFitWidth(200);
             stackMin.setPadding(new Insets(5,15,5,15));
             stackClose.setPadding(new Insets(5,15,5,15));
             HBox.setMargin(btnMin, new Insets(-25, 0, 0, 0));
@@ -565,6 +568,7 @@ public class GBingoController implements Initializable, ScreenInterface {
             imgClose.setFitHeight(12.0);
             imgMin.setFitWidth(12.0);
             imgClose.setFitWidth(12.0);
+            imgBrands.setFitWidth(160);
             HBox.setMargin(btnMin, new Insets(-25, 0, 0, 0));
             HBox.setMargin(btnClose, new Insets(-25, 0, 0, 0));
             for(int x = 0; x < number.size(); x ++){
@@ -655,6 +659,28 @@ public class GBingoController implements Initializable, ScreenInterface {
         btnSearch.setManaged(!lbShow);
         btnNew.setManaged(!lbShow);
         
+    }
+    private void initBingoBrand(){
+         Image image;
+         
+        if(System.getProperty("brand").toString().equalsIgnoreCase("YAMAHA")){
+            image = new Image("/gbingo/images/Yamaha2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("HONDA")){
+            image = new Image("/gbingo/images/Honda2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("KAWASAKI")){
+            image = new Image("/gbingo/images/Kawasaki2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("SUZUKI")){
+            image = new Image("/gbingo/images/Suzuki2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("OPPO")){
+            image = new Image("/gbingo/images/Suzuki2.png"); 
+            imgBrands.setImage(image);
+        }else{
+            imgBrands.setVisible(false);
+        }
     }
     @Override
     public void setGRider(GRider foValue) {

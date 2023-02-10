@@ -81,7 +81,7 @@ public class GBingoController1204 implements Initializable, ScreenInterface {
     @FXML
     private StackPane stackMin, stackClose, stackBody;
     @FXML
-    private ImageView imgMin, imgClose,imgHeader;
+    private ImageView imgMin, imgBrands, imgClose,imgHeader;
     @FXML
     private VBox vbCurrent;
     
@@ -150,6 +150,7 @@ public class GBingoController1204 implements Initializable, ScreenInterface {
         txtField01.setOnKeyPressed(this::txtField_KeyPressed);
         pnEditMode = EditMode.UNKNOWN;
         initButton(pnEditMode);
+        initBingoBrand();
         // TODO
     }   
     
@@ -541,6 +542,28 @@ public class GBingoController1204 implements Initializable, ScreenInterface {
         btnSearch.setManaged(!lbShow);
         btnNew.setManaged(!lbShow);
         
+    }
+    private void initBingoBrand(){
+         Image image;
+         
+        if(System.getProperty("brand").toString().equalsIgnoreCase("YAMAHA")){
+            image = new Image("/gbingo/images/Yamaha2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("HONDA")){
+            image = new Image("/gbingo/images/Honda2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("KAWASAKI")){
+            image = new Image("/gbingo/images/Kawasaki2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("SUZUKI")){
+            image = new Image("/gbingo/images/Suzuki2.png"); 
+            imgBrands.setImage(image);
+        }else if(System.getProperty("brand").toString().equalsIgnoreCase("OPPO")){
+            image = new Image("/gbingo/images/Suzuki2.png"); 
+            imgBrands.setImage(image);
+        }else{
+            imgBrands.setVisible(false);
+        }
     }
     @Override
     public void setGRider(GRider foValue) {
