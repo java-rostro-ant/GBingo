@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="GBingo.jar" size="3705055" download="eager" />
+    <jar href="GBingo.jar" size="3921696" download="eager" />
     <jar href="lib\ant-1.7.1.jar" size="1323005" download="eager" />
     <jar href="lib\apache-commons-net.jar" size="460010" download="eager" />
     <jar href="lib\appdriver-agent.jar" size="86333" download="eager" />

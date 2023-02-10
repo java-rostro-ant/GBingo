@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="AnchorParent" stylesheets="@../css/StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="AnchorParent" stylesheets="@../css/StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fx:id="imgBG" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
@@ -40,6 +40,11 @@
                                           <ImageView fx:id="imgHeader" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <image>
                                                 <Image url="@../images/header(1024x768).png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="imgBrands" fitHeight="110.0" fitWidth="150.0" layoutX="617.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/Kawasaki%20logo222.png" />
                                              </image>
                                           </ImageView>
                                           <AnchorPane AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-5.0">
