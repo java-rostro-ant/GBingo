@@ -42,7 +42,7 @@
                                                 <Image url="@../images/header(1024x768).png" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fx:id="imgBrands" fitHeight="110.0" fitWidth="150.0" layoutX="617.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fx:id="imgBrands" fitHeight="49.0" fitWidth="162.0" layoutX="612.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../images/Kawasaki%20logo222.png" />
                                              </image>
@@ -932,6 +932,12 @@
                                        </image>
                                     </ImageView>
                                  </children>
+                                 <padding>
+                                    <Insets bottom="5.0" />
+                                 </padding>
+                                 <BorderPane.margin>
+                                    <Insets top="-8.0" />
+                                 </BorderPane.margin>
                               </AnchorPane>
                            </top>
                         </BorderPane>
