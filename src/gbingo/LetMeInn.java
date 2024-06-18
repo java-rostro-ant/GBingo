@@ -20,12 +20,12 @@ public class LetMeInn {
         
         GRider oApp = new GRider();
         
-        if (!oApp.loadEnv("gRider")) {
+        if (!oApp.loadEnv("Tabulation")) {
             System.err.println(oApp.getErrMsg());
             System.exit(1);
         }
         
-        if (!oApp.logUser("gRider", "M001111122")) {
+        if (!oApp.logUser("Tabulation", "M001111122")) {
             System.err.println(oApp.getErrMsg());
             System.exit(1);
         }   

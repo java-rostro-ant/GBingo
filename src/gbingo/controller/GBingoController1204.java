@@ -559,7 +559,7 @@ public class GBingoController1204 implements Initializable, ScreenInterface {
             image = new Image("/gbingo/images/Suzuki2.png"); 
             imgBrands.setImage(image);
         }else if(System.getProperty("brand").toString().equalsIgnoreCase("OPPO")){
-            image = new Image("/gbingo/images/Suzuki2.png"); 
+            image = new Image("/gbingo/images/Oppo2.png"); 
             imgBrands.setImage(image);
         }else{
             imgBrands.setVisible(false);

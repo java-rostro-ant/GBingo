@@ -8,16 +8,16 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="GBingo.jar" size="21551993" download="eager" />
+    <jar href="GBingo.jar" size="21552011" download="eager" />
     <jar href="lib\ant-1.7.1.jar" size="1323005" download="eager" />
     <jar href="lib\apache-commons-net.jar" size="460010" download="eager" />
-    <jar href="lib\appdriver-agent.jar" size="86333" download="eager" />
+    <jar href="lib\appdriver-agent.jar" size="86341" download="eager" />
     <jar href="lib\appdriver-agentfx-ui.jar" size="230176" download="eager" />
-    <jar href="lib\appdriver-agentfx.jar" size="119137" download="eager" />
-    <jar href="lib\appdriver-base.jar" size="146357" download="eager" />
+    <jar href="lib\appdriver-agentfx.jar" size="119946" download="eager" />
+    <jar href="lib\appdriver-base.jar" size="146805" download="eager" />
     <jar href="lib\appdriver-constant.jar" size="10194" download="eager" />
     <jar href="lib\appdriver-iface.jar" size="6229" download="eager" />
-    <jar href="lib\bcprov-jdk15-1.46.jar" size="1815677" download="eager" />
+    <jar href="lib\bcprov-jdk18on-175.jar" size="8321289" download="eager" />
     <jar href="lib\commons-codec-1.11.jar" size="335042" download="eager" />
     <jar href="lib\commons-collections-3.2.2.jar" size="588337" download="eager" />
     <jar href="lib\commons-compress-1.9.jar" size="378217" download="eager" />
